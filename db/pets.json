@@ -1,0 +1,130 @@
+{
+  "animals": [
+    {
+      "name": "Sterling Archer",
+      "imageURL": "https://img-aws.ehowcdn.com/600x600p/photos.demandstudios.com/getty/article/139/30/479319368.jpg",
+      "color": "Brown",
+      "specialSkill": "Eating all day",
+      "typeOfPet": "cat"
+    },
+    {
+      "name": "Lana Kane",
+      "imageURL": "https://epi.azureedge.net/website-images/images/a-year-in-the-life-cat/cat_7_600x400.jpg?sfvrsn=b2c5d67b_2",
+      "color": "Gray",
+      "specialSkill": "PowerPoint Presentations",
+      "typeOfPet": "cat"
+    },
+    {
+      "name": "Cheryl Tunt",
+      "imageURL": "http://www.pawschicago.org/fileadmin/media/images/adoption_section/PAWS_New_Site__51_of_201__01.jpg",
+      "color": "white",
+      "specialSkill": "Relaxing all day",
+      "typeOfPet": "cat"
+    },
+    {
+      "name": "Pam Poovey",
+      "imageURL": "https://fthmb.tqn.com/FjQC6AyqUqEskIgsOxOzD6NtYWo=/600x400/twenty20_e47b3798-dd9b-40b1-91ef-1d820337966e-5aa3f798642dca00363b0df1.jpg",
+      "color": "white",
+      "specialSkill": "Being lazy all day",
+      "typeOfPet": "cat"
+    },
+    {
+      "name": "Malory Archer",
+      "imageURL": "https://images.csmonitor.com/csm/2015/07/920484_1_0709-kitten_standard.jpg?alias=standard_600x400",
+      "color": "brown",
+      "specialSkill": "Napping all day",
+      "typeOfPet": "cat"
+    },
+    {
+      "name": "Cyril Figgis",
+      "imageURL": "https://www.aaha.org/graphics/resized/pet_owner/lifestyle/from_petsmatter/cat_in_pain_xw600_xh400.jpg",
+      "color": "brown",
+      "specialSkill": "Sleeping all day",
+      "typeOfPet": "cat"
+    },
+    {
+      "name": "Dr Krieger",
+      "imageURL": "https://s-media-cache-ak0.pinimg.com/originals/bd/88/bf/bd88bf00f55c3c30316371ca3663dbf3.jpg",
+      "color": "brown",
+      "specialSkill": "Herding sheep",
+      "typeOfPet": "dog"
+    },
+    {
+      "name": "Ray Gillette",
+      "imageURL": "https://www.free-photo.cc/images/gallery/details/animals_and_insects_4/cute_little_dog_20171202_1184955416.jpg",
+      "color": "brown",
+      "specialSkill": "Being adorable",
+      "typeOfPet": "dog"
+    },
+    {
+      "name": "Barry Dillon",
+      "imageURL": "https://s-media-cache-ak0.pinimg.com/originals/87/18/34/87183493a0917abcaabfd1704ed37724.jpg",
+      "color": "brown",
+      "specialSkill": "Great with kids",
+      "typeOfPet": "dog"
+    },
+    {
+      "name": "Ron Cadillac",
+      "imageURL": "https://www.free-photo.cc/images/gallery/details/animals_and_insects_4/cute_baby_husky_dog_20180308_2050159075.jpeg",
+      "color": "white",
+      "specialSkill": "Getting the newspaper",
+      "typeOfPet": "dog"
+    },
+    {
+      "name": "Woodhouse",
+      "imageURL": "https://img-cdn.recycler.com/advantage/listing/original/b5988c6b-b137-401e-b932-ba954c7cbda3.jpg",
+      "color": "black",
+      "specialSkill": "Cuddling up with you",
+      "typeOfPet": "dog"
+    },
+    {
+      "name": "Len Trexler",
+      "imageURL": "https://s3.favim.com/orig/45/christmas-cute-dog-merry-christmas-puppy-Favim.com-408882.jpg",
+      "color": "white",
+      "specialSkill": "Long walks on the beach",
+      "typeOfPet": "dog"
+    },
+    {
+      "name": "Katya Kazanova",
+      "imageURL": "http://drexel.edu/~/media/Images/ans/explore/online-exhibits/dinosaurs/tylosaur",
+      "color": "green",
+      "specialSkill": "Great with people!",
+      "typeOfPet": "dino"
+    },
+    {
+      "name": "Nikolai Jakov",
+      "imageURL": "https://www.visitlongmont.org/wp-content/uploads/2017/04/Dinosaur.jpg",
+      "color": "brown",
+      "specialSkill": "Eating and terrifying",
+      "typeOfPet": "dino"
+    },
+    {
+      "name": "Brett Buckley",
+      "imageURL": "https://kidsfuninseoul.files.wordpress.com/2012/10/img_3480.jpg?w=600&h=400",
+      "color": "grey",
+      "specialSkill": "Running marathons",
+      "typeOfPet": "dino"
+    },
+    {
+      "name": "Mitsuko Miyazumi",
+      "imageURL": "http://www.natureworks.com.au/images/products/Dinosaurs_and_Prehistoric/Dinosaurs/Tyrannosaurus_Rex/T_Rex_Dinosaur_Walking_Large/T_Rex_Dinosaur_Walking_Large_100073.jpg",
+      "color": "green",
+      "specialSkill": "Relaxing",
+      "typeOfPet": "dino"
+    },
+    {
+      "name": "Slater",
+      "imageURL": "https://www.wallpaperink.com/gallery/shutterstock/disney-wallpaper/Flying_Dinosaurs.jpg",
+      "color": "beige",
+      "specialSkill": "Flying",
+      "typeOfPet": "dino"
+    },
+    {
+      "name": "Trinette McGoon",
+      "imageURL": "https://images.csmonitor.com/csm/2015/11/950629_1_1130-duckbill-dinosaur_standard.jpg?alias=standard_600x400",
+      "color": "",
+      "specialSkill": "Making potholes on I-440",
+      "typeOfPet": "dino"
+    }
+  ]
+}
