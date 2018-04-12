@@ -9,6 +9,44 @@
   <link rel="stylesheet" href="/main.css">
 </head>
 <body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6 text-center" id="div-animal-buttons">
+        <button type="button" class="btn btn-info" id="btn-cats">Cats</button>
+        <button type="button" class="btn btn-success" id="btn-dogs">Dogs</button>
+        <button type="button" class="btn btn-warning" id="btn-dinos">Dinos</button>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 text-center" id="div-reset">
+          <button type="button" class="btn btn-default" id="btn-reset">Reset</button>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    <div class="row" id="div-cards">
+      <div class="col-sm-12">
+
+        <!-- Sample Panel HTML -->
+        <div class="panel panel-default text-center">
+          <div class="panel-heading">
+            <h3 class="panel-title">NAME</h3>
+          </div>
+          <div class="panel-body">
+            <img src="https://www.guidedogs.org/wp-content/uploads/2015/05/Dog-Im-Not.jpg">
+            <h4>COLOR</h4>
+            <h4>SPECIAL SKILL</h4>
+          </div>
+          <div class="panel-footer type-dog">ANIMAL TYPE</div>
+        </div>
+      <!-- end Sample Panel HTML -->
+
+      </div> <!-- end col-sm-12 -->
+    </div> <!-- end #div-cards -->
+  </div> <!-- end container-fluid -->
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src = "dist/app.js"></script>
 </body>
