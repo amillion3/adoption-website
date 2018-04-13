@@ -7,6 +7,7 @@ let petData = [];
 
 function loadFunction () {
   petData = JSON.parse(this.responseText).animals;
+  // randomize results?
   buildDomString(petData);
 }
 
@@ -58,7 +59,7 @@ const getAllCards = require('./pets');
 
 const handlePetButtonClick = e => {
   console.log(e);
-  animalClicked = e.target
+  // animalClicked = e.target;
 };
 
 const createEventListeners = () => {

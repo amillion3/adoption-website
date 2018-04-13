@@ -6,6 +6,7 @@ let petData = [];
 
 function loadFunction () {
   petData = JSON.parse(this.responseText).animals;
+  // randomize results?
   buildDomString(petData);
 }
 
