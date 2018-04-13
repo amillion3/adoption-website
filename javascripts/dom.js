@@ -7,7 +7,6 @@ const printToDom = output => {
 
 const buildDomString = petData => {
   let output = '';
-  console.log(petData);
   for (let i = 0; i < petData.length; i++) {
     output += `
     <div class="panel panel-default text-center ${petData[i].typeOfPet}">
@@ -16,8 +15,8 @@ const buildDomString = petData => {
     </div>
     <div class="panel-body">
       <img src="${petData[i].imageURL}">
-      <h4>${petData[i].color}</h4>
-      <h4>${petData[i].specialSkill}</h4>
+      <h5>${petData[i].color}</h5>
+      <h5>${petData[i].specialSkill}</h5>
     </div>
     <div class="panel-footer type-${petData[i].typeOfPet}">${petData[i].typeOfPet}</div>
   </div>
