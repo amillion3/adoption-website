@@ -31,7 +31,6 @@ const printToDom = output => {
 
 const buildDomString = petData => {
   let output = '';
-  console.log(petData);
   for (let i = 0; i < petData.length; i++) {
     output += `
     <div class="panel panel-default text-center ${petData[i].typeOfPet}">
@@ -40,8 +39,8 @@ const buildDomString = petData => {
     </div>
     <div class="panel-body">
       <img src="${petData[i].imageURL}">
-      <h4>${petData[i].color}</h4>
-      <h4>${petData[i].specialSkill}</h4>
+      <h5>${petData[i].color}</h5>
+      <h5>${petData[i].specialSkill}</h5>
     </div>
     <div class="panel-footer type-${petData[i].typeOfPet}">${petData[i].typeOfPet}</div>
   </div>
@@ -55,11 +54,39 @@ module.exports = buildDomString;
 
 },{"./events":3}],3:[function(require,module,exports){
 // Attaching all event listeners
-const getAllCards = require('./pets');
+const initializer = require('./main');
+
+const changePetVisibility = (hide1, hide2, show) => {
+  const cardsToHide = document.querySelectorAll(`${hide1}, ${hide2}`);
+  const cardsToShow = document.getElementsByClassName(`${show}`);
+  // hide the first two parameters
+  for (let i = 0; i < cardsToHide.length; i++) {
+    cardsToHide[i].classList.add('hide-card');
+  }
+  // show the last parameter
+  for (let j = 0; j < cardsToShow.length; j++) {
+    cardsToShow[j].classList.remove('hide-card');
+  }
+};
 
 const handlePetButtonClick = e => {
-  console.log(e);
-  // animalClicked = e.target;
+  const animalClicked = e.target.id;
+  if (animalClicked === 'btn-cats') {
+    changePetVisibility('div.dog', 'div.dino', 'cat');
+  } else if (animalClicked === 'btn-dogs') {
+    changePetVisibility('div.cat', 'div.dino', 'dog');
+  } else {
+    changePetVisibility('div.cat', 'div.dog', 'dino');
+  }
+};
+
+const handleResetClick = e => {
+  // spread operator, convert HTML collection to array
+  const petCards = [...document.getElementsByClassName('panel'),];
+  petCards.forEach(pet => {
+    pet.remove();
+  });
+  initializer();
 };
 
 const createEventListeners = () => {
@@ -68,12 +95,12 @@ const createEventListeners = () => {
   for (let i = 0; i < petButtons.length; i++) {
     petButtons[i].addEventListener('click', handlePetButtonClick);
   }
-  resetButton.addEventListener('click', getAllCards);
+  resetButton.addEventListener('click', handleResetClick);
 };
 
 module.exports = createEventListeners;
 
-},{"./pets":5}],4:[function(require,module,exports){
+},{"./main":4}],4:[function(require,module,exports){
 // Entry point/start application
 const data = require('./data');
 

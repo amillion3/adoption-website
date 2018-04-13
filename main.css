@@ -32,6 +32,9 @@ img {
   padding: 8px;
   width: 100%;
 }
+.hide-card {
+  display: none;
+}
     /* Animal type background and font color */
 .type-cat {
   background-color: #d8edf6;
