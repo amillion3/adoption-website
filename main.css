@@ -4,14 +4,13 @@ body {
   box-sizing: border-box;
 }
 #div-cards {
-  margin: 50px 0 30px 0;
+  margin: 30px 0 30px 0;
+  border-top: 1px solid #d8e5e5;
+  padding: 15px 0 0 0;
 }
 /* end Overall Styling */
 
 /* Button styling */
-#div-animal-buttons {
-  margin: 25px;
-}
 .btn {
   margin: 15px 30px 0px 30px;
 }
@@ -21,11 +20,6 @@ body {
 /* end Button styling */
 
 /* Card Styling */
-.panel {
-  max-width: 25vw;
-  margin: 0px 25px 12px 25px;
-  display: inline-block;
-}
 img {
   border: 0.5px solid grey;
   border-radius: 4px;
@@ -34,6 +28,10 @@ img {
 }
 .hide-card {
   display: none;
+}
+img:hover {
+  transform: skew(-4deg);
+  transition-duration: 2s;
 }
     /* Animal type background and font color */
 .type-cat {
@@ -49,4 +47,4 @@ img {
   color: #ffc479;
 }
     /* end Animal type background and font color */
-/* end ard Styling */
+/* end card Styling */
