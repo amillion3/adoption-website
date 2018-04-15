@@ -1,5 +1,4 @@
 // Attaching all event listeners
-const initializer = require('./main');
 
 const changePetVisibility = (hide1, hide2, show) => {
   const cardsToHide = document.querySelectorAll(`${hide1}, ${hide2}`);
@@ -26,12 +25,10 @@ const handlePetButtonClick = e => {
 };
 
 const handleResetClick = e => {
-  // spread operator, convert HTML collection to array
-  const petCards = [...document.getElementsByClassName('panel'),];
-  petCards.forEach(pet => {
-    pet.remove();
-  });
-  initializer();
+  const allCards = document.getElementsByClassName('panel');
+  for (let i = 0; i < allCards.length; i++) {
+    allCards[i].classList.remove('hide-card');
+  }
 };
 
 const createEventListeners = () => {
