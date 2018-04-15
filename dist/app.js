@@ -2,13 +2,15 @@
 // Writing to the DOM
 const getAllCards = require('./pets');
 const buildDomString = require('./dom');
+const randomizeArray = require('./randomize');
 
 let petData = [];
 
 function loadFunction () {
   petData = JSON.parse(this.responseText).animals;
+  const petDataRandomized = randomizeArray(petData);
   // randomize results?
-  buildDomString(petData);
+  buildDomString(petDataRandomized);
 }
 
 function errorFunction () {
@@ -21,7 +23,7 @@ const initializer = () => {
 
 module.exports = initializer;
 
-},{"./dom":2,"./pets":5}],2:[function(require,module,exports){
+},{"./dom":2,"./pets":5,"./randomize":6}],2:[function(require,module,exports){
 // Writing to the dom
 const createEventListeners = require('./events');
 
@@ -54,7 +56,6 @@ module.exports = buildDomString;
 
 },{"./events":3}],3:[function(require,module,exports){
 // Attaching all event listeners
-const initializer = require('./main');
 
 const changePetVisibility = (hide1, hide2, show) => {
   const cardsToHide = document.querySelectorAll(`${hide1}, ${hide2}`);
@@ -81,12 +82,10 @@ const handlePetButtonClick = e => {
 };
 
 const handleResetClick = e => {
-  // spread operator, convert HTML collection to array
-  const petCards = [...document.getElementsByClassName('panel'),];
-  petCards.forEach(pet => {
-    pet.remove();
-  });
-  initializer();
+  const allCards = document.getElementsByClassName('panel');
+  for (let i = 0; i < allCards.length; i++) {
+    allCards[i].classList.remove('hide-card');
+  }
 };
 
 const createEventListeners = () => {
@@ -100,7 +99,7 @@ const createEventListeners = () => {
 
 module.exports = createEventListeners;
 
-},{"./main":4}],4:[function(require,module,exports){
+},{}],4:[function(require,module,exports){
 // Entry point/start application
 const data = require('./data');
 
@@ -118,5 +117,24 @@ const getAllCards = (loadFunction, errorFunction) => {
 };
 
 module.exports = getAllCards;
+
+},{}],6:[function(require,module,exports){
+const randomizeArray = petData => {
+  // https://stackoverflow.com/a/2450976
+  let currentIndex = petData.length, temporaryValue, randomIndex;
+  // While there remain elements to shuffle...
+  while (currentIndex !== 0) {
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+    // And swap it with the current element.
+    temporaryValue = petData[currentIndex];
+    petData[currentIndex] = petData[randomIndex];
+    petData[randomIndex] = temporaryValue;
+  }
+  return petData;
+};
+
+module.exports = randomizeArray;
 
 },{}]},{},[4]);
